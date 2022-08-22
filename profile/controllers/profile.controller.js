@@ -19,6 +19,7 @@ exports.createProfile = async(req, res) => {
   }
 };
 
+
 exports.showProfile = async(req, res) => {
   try{
       const data = await Profile.findAll({

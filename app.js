@@ -18,10 +18,10 @@ app.use(express.urlencoded({ extended: true }));
   require('./course/routes/course.routes')(app);
   require('./quiz/routes/quiz.routes')(app);
   
-//db.sequelize.sync();
+db.sequelize.sync();
 
 //Para generar todo de 0 descomentar esta linea(24) y comentar la 21
-db.sequelize.sync({force: true}).then(() => {initial();});
+//db.sequelize.sync({force: true}).then(() => {initial();});
 
 //server on
 app.listen(PORT, () => {

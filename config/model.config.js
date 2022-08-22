@@ -27,7 +27,6 @@ db.questions = require("../questions/models/question.models")(sequelize, Sequeli
 db.profile = require("../profile/models/profile.model")(sequelize, Sequelize);
 db.course = require("../course/models/course.mode")(sequelize, Sequelize);
 db.quiz = require("../quiz/models/quiz.model")(sequelize, Sequelize);
-db.quizResult = require("../quiz-result/models/quiz-result-model")(sequelize, Sequelize);
 
 /** Un user tienes muchos roles y al revez**/
 db.role.belongsToMany(db.user, {
